@@ -1,10 +1,11 @@
 pipeline {
-    agent any
-    stages {
-        stage('Nome') {
-            steps {
-                sh 'bash "/var/jenkins_home/workspace/Teste 002/artefatos/build-14.txt"'
-            }
-        }
-    }
+    agent any              // onde rodar (qualquer agente disponível)
+    
+    stages {               // conjunto de etapas
+        stage('Nome') {    // uma etapa específica
+            steps {        // ações dentro da etapa
+                sh 'bash "/var/jenkins_home/workspace/Teste 002/artefatos/build-14.txt"'
+            }
+        }
+    }
 }
