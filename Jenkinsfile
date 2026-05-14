@@ -4,7 +4,7 @@ pipeline {
     stages {               // conjunto de etapas
         stage('Nome') {    // uma etapa específica
             steps {        // ações dentro da etapa
-                sh 'whoami'
+                sh 'bash "/var/jenkins_home/workspace/Teste 002/artefatos/build-14.txt"'
             }
         }
     }
