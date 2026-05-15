@@ -1,5 +1,5 @@
 pipeline {
-    label (built-in)              // onde rodar (qualquer agente disponível)
+    agent any              // onde rodar (qualquer agente disponível)
     
     stages {               // conjunto de etapas
         stage('Nome') {    // uma etapa específica
