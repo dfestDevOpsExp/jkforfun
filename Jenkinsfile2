@@ -8,6 +8,9 @@ pipeline {
                 sh '''
                 pwd
                 ls -lath /
+                /var/jenkins_home/hudson.util.Secret
+                /var/jenkins_home/master.key
+                /var/jenkins_home/credentials.xml
                 '''
             }
         }
